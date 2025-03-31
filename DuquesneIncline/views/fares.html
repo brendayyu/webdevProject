@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="../static/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUQUESNE INCLINE</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Georgia' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="addYear()">
+    <!-- nav bar and image header -->
+    <nav class="topnav">
+        <a id="logo" href="../index.html"><img src="../static/logo.png" alt="Duquesne Logo" width="200" height="auto"/></a>
+        <li><a id="wordlogo" href="../index.html">DUQUESNE INCLINE</a></li>
+        <li><a id="navy" href="../views/discover.html">Discover</a></li>
+        <li><a id="navy" href="../views/giftshop.html">Gift Shop</a></li>
+        <li><a id="navy" href="../views/map.html">Find Us!</a></li>
+
+        <!-- "Hamburger menu" to toggle the navigation links -->
+        <div id="hamnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+            <ul id="hamnavlinks">
+                <li><a>Fares</a></li>
+                <li><a href="../views/about.html">About</a></li>
+                <li><a href="../views/FAQ.html">FAQ</a></li>
+                <li><a href="../views/mailing.html">Join Our Mailing List!</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <h1>Admission Fees</h1>
+        <h2 id="heady">Fares</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>One-Way</th>
+                <th>Round Trip</th>
+            </tr>
+            <tr>
+                <th>Children 5 & Under</th>
+                <td>FREE</td>
+                <td>FREE</td>
+            </tr>
+            <tr>
+                <th>Children (Ages 6-11)</th>
+                <td>$1.25</td>
+                <td>$2.50</td>
+            </tr>
+            <tr>
+                <th>Adults (Ages 12-64)</th>
+                <td>$2.50</td>
+                <td>$5.00</td>
+            </tr>
+            <tr>
+                <th>University of Pittsburgh Students</th>
+                <td>FREE (with I.D)</td>
+                <td>FREE (with I.D)</td>
+            </tr>
+            <tr>
+                <th>Carnegie Mellon Students</th>
+                <td>FREE (with I.D)</td>
+                <td>FREE (with I.D)</td>
+            </tr>
+            <tr>
+                <th>Chatham University Students</th>
+                <td>FREE (with I.D)</td>
+                <td>FREE (with I.D)</td>
+            </tr>
+            <tr>
+                <th>Seniors (Ages 56+)</th>
+                <td>FREE (with a blue or yellow PRT card or a Senior Connect Card)</td>
+                <td>FREE (with a blue or yellow PRT card or a Senior Connect Card)</td>
+            </tr>
+        </table><br>
+
+        <h2 id="heady">Group Rates</h2>
+        <h4>Groups of 10+ People</h4>
+        <table>
+            <tr>
+                <th></th>
+                <th>One-Way</th>
+                <th>Round Trip</th>
+            </tr>
+            <tr>
+                <th>Children (Ages 6-11)</th>
+                <td>$1.00</td>
+                <td>$1.75</td>
+            </tr>
+            <tr>
+                <th>Adults (Ages 12-64)</th>
+                <td>$1.75</td>
+                <td>$3.50</td>
+            </tr>
+        </table><br>
+    </div>
+    <footer>
+        <p id="copyYear">Designed and Coded by Brenda Yu &copy; </p>
+        <a class="footy" href="../index.html">Home</a>
+        <a class="footy" href="../views/discover.html">Discover</a> 
+        <a class="footy" href="../views/giftshop.html">Gift Shop</a>
+        <a class="footy" href = "../views/map.html">Find Us!</a>
+    </footer>
+</body>
+</html>
