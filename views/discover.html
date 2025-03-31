@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="../static/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUQUESNE INCLINE</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Georgia' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="addYear()">
+    <!-- nav bar and image header -->
+    <nav class="topnav">
+        <a id="logo" href="../index.html"><img src="../static/logo.png" alt="Duquesne Logo" width="200" height="auto"/></a>
+        <li><a id="wordlogo" href="../index.html">DUQUESNE INCLINE</a></li>
+        <li><a id="navy">Discover</a></li>
+        <li><a id="navy" href="../views/giftshop.html">Gift Shop</a></li>
+        <li><a id="navy" href="../views/map.html">Find Us!</a></li>
+
+        <!-- "Hamburger menu" to toggle the navigation links -->
+        <div id="hamnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+            <ul id="hamnavlinks">
+                <li><a href="../views/fares.html">Fares</a></li>
+                <li><a href="../views/about.html">About</a></li>
+                <li><a href="../views/FAQ.html">FAQ</a></li>
+                <li><a href="../views/mailing.html">Join Our Mailing List!</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <h2 id="heady">Self Guided Walk</h2>
+        <h4>A pictorial history of Pittsburgh's industry, inclines, sports venues, and natural disasters.<br>
+            A visit to the machine room to observe the original hoisting equipment from 1877 in operation.<br>
+            A panoramic view of Downtown Pittsburgh from the observation deck 400 feet above the three rivers.<br>
+            Also allow time for photos and a visit to our gift shop for post cards and souvenirs.</h4><br>
+        <h2 id="heady">City Tours That Feature The Duquesne Incline</h2>
+        <h3><a href="https://www.pghtoursandmore.net" target="_blank">Pittsburgh Tours And More</a></h3>
+        <h5>Pittsburgh Movie Locations, Sports, Breweries, Wineries and More.</h5>
+        <p>412-323-4707</p>
+        <h3><a href="https://www.mollystrolleyspgh.com/" target="_blank">Molly's Trolleys</a></h3>
+        <p>412-281-2055</p><br>
+        <h2 id="heady">Discover More on...</h2>
+        <div id="discovermenu">
+            <h3><a href="https://www.facebook.com/TheDuquesneIncline" target="_blank">Facebook</a></h3>
+            <h3><a href="https://www.yelp.com/biz/duquesne-incline-pittsburgh" target="_blank">Yelp</a></h3>
+            <h3><a href="https://www.visitpittsburgh.com" target="_blank">Visit Pittsburgh</a></h3>
+            <p>800-359-0758</p>
+            <h3><a href="www.popularpittsburgh.com" target="_blank">Popular Pittsburgh</a></h3>
+            <p>800-231-4788</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p id="copyYear">Designed and Coded by Brenda Yu &copy; </p>
+        <a class="footy" href="../index.html">Home</a>
+        <a class="footy">Discover</a> 
+        <a class="footy" href="../views/giftshop.html">Gift Shop</a>
+        <a class="footy" href = "../views/map.html">Find Us!</a>
+    </footer>
+</body>
+<script>
+    $(document).ready(function() {
+        $(".readMore a").click(function() {
+            $("#historybio").show();
+            $("#readMoreLink").hide();
+            $("#readLessLink").show();
+        });
+        $(".readLess a").click(function() {
+            $("#historybio").hide();
+            $("#readMoreLink").show();
+            $("#readLessLink").hide();
+        });
+    })
+</script>
+</html>

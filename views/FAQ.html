@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="../static/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUQUESNE INCLINE</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Georgia' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="addYear()">
+    <!-- nav bar and image header -->
+    <nav class="topnav">
+        <a id="logo" href="../index.html"><img src="../static/logo.png" alt="Duquesne Logo" width="200" height="auto"/></a>
+        <li><a id="wordlogo" href="../index.html">DUQUESNE INCLINE</a></li>
+        <li><a id="navy" href="../views/discover.html">Discover</a></li>
+        <li><a id="navy" href="../views/giftshop.html">Gift Shop</a></li>
+        <li><a id="navy" href="../views/map.html">Find Us!</a></li>
+
+        <!-- "Hamburger menu" to toggle the navigation links -->
+        <div id="hamnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+            <ul id="hamnavlinks">
+                <li><a href="../views/fares.html">Fares</a></li>
+                <li><a href="../views/about.html">About</a></li>
+                <li><a>FAQ</a></li>
+                <li><a href="../views/mailing.html">Join Our Mailing List!</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <h2 id="heady">Frequently Asked Questions</h2>
+        
+        <div class="faq">
+            <h3>What is the payment method for riding the Duquesne Incline?<br>
+                <button class="readMore"><a href="javascript:void(0);">+</a></button>
+            </h3>
+            <p class="faqcontent">Exact Cash Fare upon arrival. There are no tickets, no advance payment, 
+                no reservations and no debit or credit cards.<br>
+                <button class="readLess"><a href="javascript:void(0);">-</a></button>
+            </p>
+        </div>
+
+        <div class="faq">
+            <h3>What type of payment system does the Duquesne Incline accept?<br>
+                <button class="readMore"><a href="javascript:void(0);">+</a></button>
+            </h3>
+            <p class="faqcontent">The Duquesne Incline is part of the transportation system in Pittsburgh 
+                and therefore uses the same _CASH_ fare system as the buses and trolleys. 
+                A change machine is available for your convenience. Having the exact fare 
+                in hand speeds up the payment process considerably.<br>
+                <button class="readLess"><a href="javascript:void(0);">-</a></button>
+            </p>
+        </div>
+
+        <div class="faq">
+            <h3>Do Pennsylvania seniors get a discount on the Duquesne Incline? 
+                If so, how can they prove their eligibility?<br>
+                <button class="readMore"><a href="javascript:void(0);">+</a></button>
+            </h3>
+            <p class="faqcontent">Pennsylvania Seniors 65 and older who present a BLUE or YELLOW PRT card or 
+                a Senior ConnectCard ride free, otherwise, the adult rate applies.
+                The Duquesne Incline is required to request a Pennsylvania Senior Citizen 
+                Transit ID card as proof of discount eligibility, no exceptions, in order to 
+                be reimbursed by the Commonwealth of PA.<br>
+                <button class="readLess"><a href="javascript:void(0);">-</a></button>
+            </p>
+        </div>
+
+        <div class="faq">
+            <h3>Are there restrooms at the Duquesne Incline?<br>
+                <button class="readMore"><a href="javascript:void(0);">+</a></button>
+            </h3>
+            <p class="faqcontent">Sorry, no rest rooms. The Duquesne Incline has been part of Pittsburgh's transportation 
+                system since 1877 like a trolley or the cable cars of San Francisco.<br>
+                <button class="readLess"><a href="javascript:void(0);">-</a></button>
+            </p>
+        </div>
+
+        <div class="faq">
+            <h3>Are there wait times at the Duquesne Incline?<br>
+                <button class="readMore"><a href="javascript:void(0);">+</a></button>
+            <p class="faqcontent">Saturday's and Sunday's after noon are our busiest times. Expect to wait in line for 
+                about 10 minutes in both directions.<br>
+                <button class="readLess"><a href="javascript:void(0);">-</a></button>
+            </p>
+        </div>
+        
+        <div class="faq">
+            <h3>Is the Duquesne Incline accessible for individuals with disabilities?<br>
+                <button class="readMore"><a href="javascript:void(0);">+</a></button>
+            </h3>
+            <p class="faqcontent">There are many steps to traverse from the lower station parking lot.The Upper Station 
+                located at 1220 Grandview Ave, Pittsburgh, Pa. 15211 is wheelchair accessible. Our 
+                observation deck is also wheelchair accessible. The Historic (original) Incline cars can 
+                accommodate wheelchairs up to 25 inches in width.<br>
+                <button class="readLess"><a href="javascript:void(0);">-</a></button>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p id="copyYear">Designed and Coded by Brenda Yu &copy; </p>
+        <a class="footy" href="../index.html">Home</a>
+        <a class="footy" href="../views/discover.html">Discover</a> 
+        <a class="footy" href="../views/giftshop.html">Gift Shop</a>
+        <a class="footy" href = "../views/map.html">Find Us!</a>
+    </footer>
+</body>
+<script>
+    $(document).ready(function() {
+        $(".readMore a").click(function() {
+            $(this).closest('.faq').find('.faqcontent').show();
+            $(this).parent().hide();
+            $(this).closest('.faq').find('.readLess').show();
+        });
+        $(".readLess a").click(function() {
+            $(this).closest('.faq').find('.faqcontent').hide();
+            $(this).parent().hide();
+            $(this).closest('.faq').find('.readMore').show();
+        });
+    });
+</script>
+</html>

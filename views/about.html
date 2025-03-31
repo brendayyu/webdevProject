@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="../static/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUQUESNE INCLINE</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Georgia' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="addYear()">
+
+    <!-- nav bar and image header -->
+    <nav class="topnav">
+        <a id="logo" href="../index.html"><img src="../static/logo.png" alt="Duquesne Logo" width="200" height="auto"/></a>
+        <li><a id="wordlogo" href="../index.html">DUQUESNE INCLINE</a></li>
+        <li><a id="navy" href="../views/discover.html">Discover</a></li>
+        <li><a id="navy" href="../views/giftshop.html">Gift Shop</a></li>
+        <li><a id="navy" href="../views/map.html">Find Us!</a></li>
+
+        <!-- "Hamburger menu" to toggle the navigation links -->
+        <div id="hamnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+            <ul id="hamnavlinks">
+                <li><a href="../views/fares.html">Fares</a></li>
+                <li><a>About</a></li>
+                <li><a href="../views/FAQ.html">FAQ</a></li>
+                <li><a href="../views/mailing.html">Join Our Mailing List!</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <h2 id="heady">Early History</h2>
+        <div id="history">
+            <p>The Duquesne Incline is one of those which follows very closely the tracks of an early coal hoist. 
+                Old newspapers indicate the existence of such a conveyance as early as 1854. Residents apparently 
+                referred to it as "Kirk Lewis' incline" and located it on the present site of The Duquesne Incline's 
+                Upper Station. Grandview Avenue was then the High Street, and the area was just beginning to be converted 
+                from farmland to homesites. This pleasantly-situated acreage was an excellent area to absorb some of the 
+                expanding population of the city, but the problem of easy access was still to be solved.<br><br>
+                <button id="readMoreLink" class="readMore"><a href="javascript:void(0);">Read More...</a></button></p>
+            <p id="historybio">Although plans for a freight and passenger incline are known to have existed much earlier, 
+                financial backing was exceedingly hard to find--even the modest sum of $47,000--and actual construction was delayed. 
+                Eventually, of course, difficulties were overcome and the Incline was built. It was opened to the public May 20, 1877. 
+                The Duquesne Incline was the first Pittsburgh incline designed and built by Samuel Diescher, for Kirk Bigham and Associates. 
+                Mr. Diescher, an engineer, had become the country's foremost builder of inclines. He was also to design and build most of those that followed.
+                <br><br>
+                At the time of its public opening, it was one of four inclined planes serving the summit of Coal Hill, which later came 
+                to be known as Mount Washington. The Duquesne Incline was operated, from 1877 until 1962 by The Duquesne Inclined Plane Company. 
+                From 1964 until the present, the Incline has been operated by the Society for the Preservation of The Duquesne Heights Incline; 
+                it has been owned by the Port Authority of Allegheny County.<br><br>
+                <button id="readLessLink" class="readLess"><a href="javascript:void(0);">Read Less...</a></button>
+        </div>
+        <h2 id="heady">Fun Facts</h2>
+        <h4>Opened to Public: May 20, 1877<br>
+            Cost to Build: $47,000<br>
+            Length of Track: 794 feet<br>
+            Elevation: 400 feet<br>
+            Grade: 30.5 degrees<br>
+            Speed: 6 miles per hour<br>
+            Passenger: Capacity 18 per car</h4>
+        <h3 id="heady">More Articles About the Duquesne Incline...</h3>
+        <p><a href="https://pabook.libraries.psu.edu/literary-cultural-heritage-map-pa/feature-articles/duquesne-incline-historic-artifact-rise" target="_blank">The Duquesne Incline: An Historic Artifact on the Rise</a></p>
+    </div>
+    
+    <footer>
+        <p id="copyYear">Designed and Coded by Brenda Yu &copy;</p>
+        <a class="footy" href="../index.html">Home</a>
+        <a class="footy" href="../views/discover.html">Discover</a> 
+        <a class="footy" href="../views/giftshop.html">Gift Shop</a>
+        <a class="footy" href = "../views/map.html">Find Us!</a>
+    </footer>
+</body>
+<script>
+    $(document).ready(function() {
+        $(".readMore a").click(function() {
+            $("#historybio").show();
+            $("#readMoreLink").hide();
+            $("#readLessLink").show();
+        });
+        $(".readLess a").click(function() {
+            $("#historybio").hide();
+            $("#readMoreLink").show();
+            $("#readLessLink").hide();
+        });
+    })
+</script>
+</html>
